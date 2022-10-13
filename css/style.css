@@ -1,0 +1,18 @@
+/* declarar unas variables de colores y fuentes */
+:root{
+    /* fuentes */
+    --titulos:'Lato', sans-serif;
+    --parrafos:'Montserrat', sans-serif;
+    /*colores corporativos*/
+    --encabezado: rgb(238, 10, 10);
+    --piepagina:#000;
+    --enlace:#fff;
+    --enlaceSobre:rgb(226, 158, 33);
+    
+}
+
+/*configuracion global */
+h1,h2,h3,h4,h5,h6,{
+    font-family: var(--titulos);
+    
+}
