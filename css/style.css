@@ -4,14 +4,45 @@
     --titulos:'Lato', sans-serif;
     --parrafos:'Montserrat', sans-serif;
     /*colores corporativos*/
-    --encabezado: rgb(238, 10, 10);
+    --encabezado: hsl(0, 92%, 49%);
     --piepagina:#000;
     --enlace:#fff;
     --enlaceSobre:rgb(226, 158, 33); 
 }
 
 /*configuracion global */
-h1,h2,h3,h4,h5,h6,{
-    font-family: var(--titulos);
-    
+h1,h2,h3,h4,h5,h6, {
+    font-family:var(--titulos);
+}
+
+/* selector universal en css es (*) */
+*{
+    /*calcular mejor los paddings o espaciados */
+    box-sizing: border-box;
+}
+
+
+/* representacion de una clase en css es (.) */
+/* Encabezado */
+.home-wrapper {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+
+
+header {
+    width: 100%;
+    background-color: var(--encabezado);
+    position: fixed; /* Elemento fijo */
+    padding-top: 8px;
+}
+
+header nav {
+    float: right;
+    margin-left: 5px;
+    padding: 10px 2px;
+}
+
+header img{
+    width: 200px;
 }
